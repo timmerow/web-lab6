@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ЛР6 — Основы JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="container">ЛР6 — Основы JavaScript</h1>
+    </header>
+
+    <main class="container">
+        <form id="calculations">
+            <section>
+                <h2>Возведение в степень</h2>
+                <label>Основание x <input id="base" name="base" type="number" step="any" value="2" required></label>
+                <label>Степень n <input id="exponent" name="exponent" type="number" min="1" value="5" required></label>
+                <p>Результат: <output name="powerResult" for="base exponent"></output></p>
+            </section>
+
+            <section>
+                <h2>Наибольший общий делитель</h2>
+                <label>Число a <input id="first" name="first" type="text" inputmode="numeric" pattern="[0-9]+" value="48" required></label>
+                <label>Число b <input id="second" name="second" type="text" inputmode="numeric" pattern="[0-9]+" value="18" required></label>
+                <p>Результат: <output name="gcdResult" for="first second"></output></p>
+            </section>
+
+            <section>
+                <h2>Наименьшая цифра</h2>
+                <label>Число x <input id="digits" name="digits" type="text" inputmode="numeric" pattern="[0-9]+" value="5823" required></label>
+                <p>Результат: <output name="digitResult" for="digits"></output></p>
+            </section>
+
+            <section>
+                <h2>Склонение слова «запись»</h2>
+                <label>Количество записей <input id="records" name="records" type="text" inputmode="numeric" pattern="[0-9]+" value="22" required></label>
+                <p><output name="recordsResult" for="records"></output></p>
+            </section>
+
+            <section>
+                <h2>Число Фибоначчи</h2>
+                <label>Номер n <input id="index" name="index" type="number" min="0" max="1000" value="10" required></label>
+                <p>Результат: <output name="fibResult" for="index"></output></p>
+            </section>
+
+            <button type="submit">Вычислить</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
